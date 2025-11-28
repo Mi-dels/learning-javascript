@@ -34,4 +34,16 @@ const winner = function (a, b) {
 const winner1 = winner(calcResult1, calcResult2);
 console.log(winner1);
 
-//   Array coding challenge
+//   object coding challenge
+// write: jonas has 3 friends , and his best friend is called micheal
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Stephen",
+  age: 24,
+  job: "Teacher",
+  friends: ["micheal", "James", "paul"],
+};
+
+const sentence = `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}. `;
+console.log(sentence);

@@ -215,3 +215,67 @@ const ages = [personAge(currentYear[0]), personAge(currentYear[1])];
 console.log(ages);
 const ages2 = [year1, year2];
 console.log(ages2);
+
+OBJECTS;
+
+//in arrays we can define the elements of the arrays but in the objects we can define the elements .
+//For example
+
+ARRAYS;
+
+const olaIdentity = ["Olamide", "ogunjobi", 22, ["Ella", "Joy"]];
+console.log(olaIdentity);
+
+//  OBJECTS
+
+const olaIdentity1 = {
+  personName: "Olamide",
+  lastName: "Ogunjobi",
+  girlAge: 22,
+  girlFriends: ["Ella", "Joy"],
+};
+console.log(olaIdentity1);
+//the object gave us the option to define our elements not
+// like arrays that do not give us that opportunity. when defining my elements
+//  in objects , i use the colon sign not equal to.
+// the difined elements are called key value pairs or properties.
+
+// how to get the object elements using the key value pair
+
+//      DOT AND BRACKET NOTATION
+// the dot notation helps us get the obect elements using the key value pairs
+
+console.log(olaIdentity1.lastName);
+
+// for the bracket notation, you write it this way
+
+console.log(olaIdentity1["lastName"]);
+
+// for the bracket notation, you can write an expression in the bracket.
+//  for example
+
+//let say
+
+const nameKey = "Name";
+console.log(olaIdentity1["person" + nameKey]);
+
+// let us say we need to get a reply for the user
+// to know what he would to know about ola.
+// prompt, check notebook
+
+const interestedIn = prompt(
+  "What do you want to know about Ola. Choose between personName, lastName, girlAge, girlFriends"
+);
+console.log(olaIdentity1[interestedIn]);
+
+if (olaIdentity1[interestedIn]) {
+  console.log(olaIdentity1[interestedIn]);
+} else {
+  console.log(
+    "Wrong request.Choose between personName, lastName, girlAge, girlFriends"
+  );
+}
+// we can use the dot and bracket notation to add more key value pair.
+
+olaIdentity1.location = "NIGERIA";
+console.log(olaIdentity1);
